@@ -1,6 +1,6 @@
 package Intafaces;
 
-public interface ImageAndVideo {
+public interface Luminosità {
     public void turnUpBrightness();
 
     public void decreseBrightness();

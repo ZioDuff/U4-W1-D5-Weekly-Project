@@ -1,6 +1,7 @@
 package Intafaces;
 
-public interface AudioAndVideo {
+public interface Volume {
+
 
     public void play();
 

@@ -2,14 +2,17 @@ package Entities;
 
 public abstract class elementoMultimediale {
     //    ATTRIBUTI
+//    vado a stabile l'attributo generale che avranno tutti i figli di questa classe padre
     protected String title;
 
     //    COSTRUTTORE
+//    questo sarà il costruttore che passerà in eredità nei figli
     public elementoMultimediale(String title) {
         this.title = title;
     }
-//    METODI
 
+    //    METODI
+// vado a fare un override del metodo toString per poter visualizzare correttamente l'oggetto
     @Override
     public String toString() {
         return "elementoMultimediale{" +
@@ -17,6 +20,7 @@ public abstract class elementoMultimediale {
                 '}';
     }
 
+    // metoddo per ritornare e stampare il titolo dell 'oggetto
     public String getName() {
         return title;
     }
