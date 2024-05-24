@@ -12,7 +12,7 @@ public class Video extends ElementoMultimediale implements Luminosità, Volume {
 
     //    COSTRUTTORE
 //    questo costruttore è uguale al quello del video
-    public Video(String name, int duration, int luminositaVideo) {
+    public Video(String name, int duration) {
         super(name);
         setDuration(duration);
     }
@@ -54,7 +54,7 @@ public class Video extends ElementoMultimediale implements Luminosità, Volume {
     public void play() {
         if (this.duration > 0 && this.volume >= 0 && this.volume <= 10 && this.brightness >= 0 && this.brightness <= 10) {
             for (int i = 0; i < duration; i++) {
-                System.out.println(this.title + " " + this.volume);
+                System.out.println(this.title);
                 ;
             }
             printVolume();
