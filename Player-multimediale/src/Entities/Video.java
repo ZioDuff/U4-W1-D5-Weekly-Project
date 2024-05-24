@@ -3,7 +3,7 @@ package Entities;
 import Intafaces.Luminosità;
 import Intafaces.Volume;
 
-public class Video extends elementoMultimediale implements Luminosità, Volume {
+public class Video extends ElementoMultimediale implements Luminosità, Volume {
     //    ATTRIBUTI
 //    rispetto al padre qui avremo 3 attributi in piu
     private int duration;
@@ -12,7 +12,7 @@ public class Video extends elementoMultimediale implements Luminosità, Volume {
 
     //    COSTRUTTORE
 //    questo costruttore è uguale al quello del video
-    public Video(String name, int duration) {
+    public Video(String name, int duration, int luminositaVideo) {
         super(name);
         setDuration(duration);
     }
@@ -54,7 +54,8 @@ public class Video extends elementoMultimediale implements Luminosità, Volume {
     public void play() {
         if (this.duration > 0 && this.volume >= 0 && this.volume <= 10 && this.brightness >= 0 && this.brightness <= 10) {
             for (int i = 0; i < duration; i++) {
-                System.out.println(this.title);
+                System.out.println(this.title + " " + this.volume);
+                ;
             }
             printVolume();
             printBrightness();
@@ -67,6 +68,7 @@ public class Video extends elementoMultimediale implements Luminosità, Volume {
 
     @Override
     public void turnUpVolume() {
+
         setVolume(this.volume + 1);
     }
 

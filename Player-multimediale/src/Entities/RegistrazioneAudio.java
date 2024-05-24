@@ -2,7 +2,7 @@ package Entities;
 
 import Intafaces.Volume;
 
-public class RegistrazioneAudio extends elementoMultimediale implements Volume {
+public class RegistrazioneAudio extends ElementoMultimediale implements Volume {
 
     //    Attributi
 //    a differenza del padre qui abbiamo 2 attributi in piu
@@ -24,7 +24,8 @@ public class RegistrazioneAudio extends elementoMultimediale implements Volume {
     public void play() {
         if (this.duration > 0 && this.volume >= 0 && this.volume <= 10) {
             for (int i = 0; i < duration; i++) {
-                System.out.println(this.title);
+                System.out.println(this.title + " " + this.volume);
+                ;
             }
             printVolume();
 

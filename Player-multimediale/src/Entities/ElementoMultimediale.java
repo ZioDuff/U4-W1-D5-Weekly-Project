@@ -1,13 +1,13 @@
 package Entities;
 
-public abstract class elementoMultimediale {
+public abstract class ElementoMultimediale {
     //    ATTRIBUTI
 //    vado a stabile l'attributo generale che avranno tutti i figli di questa classe padre
     protected String title;
 
     //    COSTRUTTORE
 //    questo sarà il costruttore che passerà in eredità nei figli
-    public elementoMultimediale(String title) {
+    public ElementoMultimediale(String title) {
         this.title = title;
     }
 

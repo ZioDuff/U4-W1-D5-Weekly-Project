@@ -2,7 +2,7 @@ package Entities;
 
 import Intafaces.Luminosità;
 
-public class Immagine extends elementoMultimediale implements Luminosità {
+public class Immagine extends ElementoMultimediale implements Luminosità {
     //    ATTRIBUTI
 //    l'immagine avrà come attributo la luminosità che non eredita dal padre
     private int brightness = 1;
